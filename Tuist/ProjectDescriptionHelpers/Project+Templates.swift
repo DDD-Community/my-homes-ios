@@ -12,6 +12,12 @@ extension Project {
     return Project(
       name: name,
       organizationName: "MyHomes",
+      options: [
+        .textSettings(
+          indentWidth: 2,
+          tabWidth: 2
+        )
+      ],
       packages: packages,
       settings: settings,
       targets: targets,
