@@ -41,9 +41,9 @@ let project = Project.project(
   schemes: [
     Scheme(
       name: "MyHomes",
-      buildAction: BuildAction(targets: ["MyHomes"]),
-      testAction: TestAction(targets: ["MyHomesTests"]),
-      runAction: RunAction(configurationName: "Debug")
+      buildAction: .buildAction(targets: ["MyHomes"]),
+      testAction: .targets(["MyHomesTests"]),
+      runAction: .runAction(configuration: .debug)
     )
   ]
 )
